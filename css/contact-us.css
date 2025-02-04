@@ -1,0 +1,132 @@
+.contact_us_body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image_folder/contact_us_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contact_us_container{ 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.74); 
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.contact_us_left_box{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contact_us_right_box{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contact_us_form_container{
+    padding: 20px;
+}
+.contact_us_form_container form{
+    display: flex;
+    flex-direction: column;
+}
+.contact_us_form_container label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact_us_form_container label:hover{
+    color: #ff0000;
+    margin-bottom: 5px;
+    font-weight: bold;
+ 
+
+}
+.contact_us_form_container input,.contact_us_form_container select , .contact_us_form_container textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 50PX;
+}
+
+.contact_us_form_container input:hover,.contact_us_form_container select:hover ,.contact_us_form_container textarea:hover{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b31818;
+    border-radius: 50PX;
+}
+.contact_us_form_container button{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50PX;
+}
+.contact_us_form_container button:hover{
+    color: #000000;
+    background-color: rgb(255, 60, 0);
+    transform: scale(1.02);
+    transition: background 0.5s ease-in-out; 
+}
+.contact_us_list{
+    padding: 20px 0;
+}
+
+.contact_us_info{
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0, 0.1);
+    
+}
+.contact_us_info:hover{
+
+    background-color: rgb(255, 211, 184);
+        transform: scale(1.08);
+        transition: background 0.4s ease-in-out; 
+}
+
+.contact_us_info h3{
+    margin: 0 0 10px;
+     font-size: 18px;
+     color: #ff0000;
+
+}
+.contact_us_info p{
+    margin: 0;
+    font-size: 14px;
+    color: hsl(0, 0%, 20%);
+    font-weight: bolder;
+}
+.contact_us_map-container{
+margin-top: 20px;
+margin-left: 5%;
+justify-content: center;
+align-content: center;
+}
+@media (max-width:760px){
+    .contact_us_form_container form{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .contact_us_left_box,.contact_us_right_box{
+        width: 100%;
+        padding: 0%;
+    }
+    .contact_us_form_container {
+        padding: 5px  0px;
+    }
+
+    
+}
