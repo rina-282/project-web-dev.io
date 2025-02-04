@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prayers-and-pledge</title>
+    <link rel="shortcut icon" href="images/sarhad-logo.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Wrap header and navbar in a sticky container */
+        .sticky-header-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            /* Ensure it stays above the rest of the content */
+        }
+
+        /* Adjust the body margin to account for the fixed header/navbar */
+        body {
+            margin-top: 160px;
+            /* Adjust this to the height of the combined header + navbar */
+        }
+
+        .container-fluid {
+            background-image: url('images/below-navbar-pic.jpeg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 35vh;
+            position: relative;
+            /* Make sure text is positioned relative to this container */
+        }
+
+        .text-wrapper {
+            font-size: 3rem;
+            /* Big font size for the text */
+            color: #ffffff;
+            /* White text to contrast with the image */
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            /* Center horizontally */
+            top: 50%; 
+            /* Center vertically */
+            transform: translate(-50%, -50%);
+            /* Correctly center the text */
+            text-align: center;
+            /* Optional: ensure the text itself is centered */
+        }
+        .text-shadow{
+    text-shadow:0px 0px 15px rgba(255, 42, 0, 0.7);
+}
+.text-orange{
+    color: #ff3c00;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Header + Navbar Container -->
+    <div class="sticky-header-navbar">
+        <!-- Header -->
+        <header class="bg-light py-3">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/updated-logo.png" alt="School Logo" class="me-3" style="height: 80px;">
+                    <div>
+                        <h1 class="h4 mb-0">SARHAD CBSE SCHOOL</h1>
+                        <p class="mb-0">PUNE | A CBSE AFFILIATED SCHOOL</p>
+                        <small>AFFILIATION NO. XXXXX</small>
+                    </div>
+                </div>
+                <div class="mt-3 mt-md-0 text-center text-md-end">
+                    <a href="path/to/mandatory-public-disclosure.pdf"
+                        class="btn btn-dark btn-sm d-none d-sm-inline-block" target="_blank">Mandatory Public
+                        Disclosure</a>
+                    <a href="path/to/schools-brochure.pdf" class="btn btn-dark btn-sm me-2 d-none d-sm-inline-block"
+                        target="_blank">School Brochure</a>
+                    <a href="#login-signup" class="btn btn-dark btn-sm d-none d-sm-inline-block">Login/Signup</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Sarhad CBSE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-us.html" id="aboutUsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <li class="dropdown-header">Our Authorities</li>
+                                <li><a class="dropdown-item" href="principals-message.html">Principal's Message</a></li>
+                                <li><a class="dropdown-item" href="founders-message.html">Founder's Message</a></li>
+                                <li><a class="dropdown-item" href="trustees-message.html">Trustee's Message</a></li>
+                                <li><a class="dropdown-item" href="chairpersons-message.html">Chairperson's Message</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Institute Introduction</li>
+                                <li><a class="dropdown-item" href="history-vision-and-mission.html">History, Vision and
+                                        Mission</a></li>
+                                <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+                                <li><a class="dropdown-item" href="path/to/school-management-committee.pdf"
+                                        target="_blank">School Management
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/sexual-harassment-committee.pdf"
+                                        target="_blank">Sexual Harassment
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/pta-executive-committee-members.pdf"
+                                        target="_blank">PTA Executive Committee
+                                        Members</a></li>
+                                <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+                                <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                                <li class="dropdown-header">Know Us More</li>
+                                <li><a class="dropdown-item" href="health-guidelines.html">Health Guidelines</a></li>
+                                <li><a class="dropdown-item" href="why-sarhad.html">Why Sarhad</a></li>
+                                <li><a class="dropdown-item" href="discover-sarhad.html">Discover Sarhad</a></li>
+                                <li><a class="dropdown-item" href="rules-and-regulations.html">Rules & Regulations</a>
+                                </li>
+                                <li><a class="dropdown-item" href="sister-institutes.html">Sister Institutes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Parent's Section</li>
+                                <li><a class="dropdown-item" href="instructions-to-parents.html">Instruction to
+                                        Parents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Facilities
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                                <li class="dropdown-header">Our Amenities</li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="computer-lab.html">Computer Lab</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Other Amenities</li>
+                                <li><a class="dropdown-item" href="school-bus.html">School Bus</a></li>
+                                <li><a class="dropdown-item" href="arts-and-music.html">Art & Music</a></li>
+                                <li><a class="dropdown-item" href="cocurricular-activities.html">Co-curricular
+                                        Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li class="dropdown-header">Seggregation of Classes</li>
+                                <li><a class="dropdown-item" href="preprimary-classes.html">Pre-primary Classes</a></li>
+                                <li><a class="dropdown-item" href="primary-classes.html">Primary Classes</a></li>
+                                <li><a class="dropdown-item" href="middle-classes.html">Middle Classes</a></li>
+                                <li><a class="dropdown-item" href="secondary-classes.html">Secondary Classes</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Planner</li>
+                                <li><a class="dropdown-item" href="calender.html">Calender</a></li>
+                                <li><a class="dropdown-item" href="academic-planner.html">Academic Planner</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="achievementsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Achievements
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                                <li class="dropdown-header">Awards</li>
+                                <li><a class="dropdown-item" href="bagged-awards.html">Bagged Awards</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Certificates</li>
+                                <li><a class="dropdown-item" href="deserving-certificates.html">Deserving
+                                        Certifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                <li class="dropdown-header">Mesmerizing Moments</li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery At Glance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mandatory-disclosure.html">Mandatory Public Disclosure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="text-wrapper">
+            "School is the stage of life."
+        </div>
+    </div>
+
+    <!-- Paste your code here -->
+     <div class="container">
+        <!-- Header section -->
+        <header class=" text-center py-4 mb-4 rounded-4">
+            <h1 class=" display-4">Our Prayers &</h1>
+            <h1 class=" display-4">Our Pledge</h1>
+            
+        </header>
+    
+        <!-- National Anthem section with curve -->
+        <div class="section mb-4 p-4 rounded-4 shadow-lg bg-white">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/Indian_Flag.jpg" alt="Indian Flag" class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-orange text-center mb-3 text-shadow">NATIONAL ANTHEM</h2>
+                    <p class="text-dark text-center">
+                        जन-गण-मन अधिनायक जय हे,<br>
+                        भारत भाग्य विधाता!<br>
+                        पंजाब-सिंध-गुजरात-मराठा,<br>
+                        द्राविड़-उत्कल-बंग विंध्य हिमाचल यमुना गंगा,<br>
+                        उच्छल जलधि तरंग<br>
+                        तव शुभ नामे जागे, तव शुभाशीष मागे<br>
+                        गाहे तव जय गाथा।<br>
+                        जन-गण-मंगलदायक जय हे,<br>
+                        भारत भाग्य विधाता! जय हे! जय हे! जय हे!<br>
+                        जय जय जय जय हे!<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Country Pledge section with curve -->
+        <div class="section mb-4 p-4 rounded-4 shadow-lg bg-white">
+            <div class="row align-items-center d-flex flex-row-reverse">
+                <div class="col-md-6">
+                    <img src="images/vinaa.jpg" alt="vinaa Symbol" class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-orange text-center mb-3 text-shadow">Country Pledge</h2>
+                    <p class="text-dark text-center">
+                        “India is my country and all Indians are my brothers and sisters. <br>
+                        I love my country and I am proud of its rich and varied heritage. <br>
+                        I shall always strive to be worthy of it. <br>
+                        I shall give my parents, teachers, and all elders respect and treat everyone with courtesy. <br>
+                        To my country and my people, I pledge my devotion. <br>
+                        In their well-being and prosperity alone, lies my happiness.” <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sarhad Prayer section with curve -->
+        <div class="section mb-4 p-4 rounded-4 shadow-lg bg-white">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/goddess.jpg" alt="Goddess Image" class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-orange text-center mb-3 text-shadow">Sarhad Prayer</h2>
+                    <p class="text-dark text-center">
+                        WE SHALL OVERCOME <br>
+                        We shall overcome, We shall overcome, <br>
+                        We shall overcome, some day, <br>
+                        Oh, deep in my heart, I do believe, we shall <br>
+                        overcome, some day, We’ll walk hand in hand, <br>
+                        we’ll walk hand some day, <br>
+                        Oh, deep in my heart, I do believe, we shall overcome, <br>
+                        some day. We shall peace, we shall live in peace, <br>
+                        we shall live in peace, some day. We shall all be free, <br>
+                        we shall all be free, we shall all be free, some day. <br>
+                        Oh, deep in my heart, I do believe, <br>
+                        we shall overcome, some day. We are not afraid, <br>
+                        we are not afraid, we are not afraid, TODAY <br>
+                        Oh, deep in my heart, i do believe, we shall overcome, <br>
+                        some day. We shall overcome, we shall overcome, <br>
+                        we shall overcome some day. <br>
+                        Oh, deep in my heart, I do believe, we shall overcome, <br>
+                        some day. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+   
+    
+    <script>
+        // Add event listener for scroll event
+        document.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('.section'); // Get all sections
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect(); // Get section position
+                if (rect.top < window.innerHeight - 100) { // Check if section is in view
+                    section.style.opacity = '1'; // Make section visible
+                }
+            });
+        });
+    </script>
+
+   
+        <!-- Bootstrap JS & dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

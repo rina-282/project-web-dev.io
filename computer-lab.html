@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer-lab</title>
+    <link rel="shortcut icon" href="images/sarhad-logo.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Wrap header and navbar in a sticky container */
+        .sticky-header-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            /* Ensure it stays above the rest of the content */
+        }
+
+        /* Adjust the body margin to account for the fixed header/navbar */
+        body {
+            margin-top: 160px;
+            /* Adjust this to the height of the combined header + navbar */
+        }
+
+        .container-fluid {
+            background-image: url('images/below-navbar-pic.jpeg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 35vh;
+            position: relative;
+            /* Make sure text is positioned relative to this container */
+        }
+
+        .text-wrapper {
+            font-size: 3rem;
+            /* Big font size for the text */
+            color: #ffffff;
+            /* White text to contrast with the image */
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            /* Center horizontally */
+            top: 50%;
+            /* Center vertically */
+            transform: translate(-50%, -50%);
+            /* Correctly center the text */
+            text-align: center;
+            /* Optional: ensure the text itself is centered */
+        }
+        /* /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0; 
+        } */
+
+        .information {
+            background-color: #ffffff;
+            padding: 60px 20px;
+        }
+
+        .information h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .info-section {
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section img {
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .info-section h4 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .info-section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .info-section h4 {
+                font-size: 1.5rem;
+            }
+
+            .info-section p {
+                font-size: 0.9rem;
+            }
+
+            .information h3 {
+                font-size: 2rem;
+            }
+
+            .info-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-section img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Header + Navbar Container -->
+    <div class="sticky-header-navbar">
+        <!-- Header -->
+        <header class="bg-light py-3">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/updated-logo.png" alt="School Logo" class="me-3" style="height: 80px;">
+                    <div>
+                        <h1 class="h4 mb-0">SARHAD CBSE SCHOOL</h1>
+                        <p class="mb-0">PUNE | A CBSE AFFILIATED SCHOOL</p>
+                        <small>AFFILIATION NO. XXXXX</small>
+                    </div>
+                </div>
+                <div class="mt-3 mt-md-0 text-center text-md-end">
+                    <a href="path/to/mandatory-public-disclosure.pdf"
+                        class="btn btn-dark btn-sm d-none d-sm-inline-block" target="_blank">Mandatory Public
+                        Disclosure</a>
+                    <a href="path/to/schools-brochure.pdf" class="btn btn-dark btn-sm me-2 d-none d-sm-inline-block"
+                        target="_blank">School Brochure</a>
+                    <a href="#login-signup" class="btn btn-dark btn-sm d-none d-sm-inline-block">Login/Signup</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Sarhad CBSE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-us.html" id="aboutUsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <li class="dropdown-header">Our Authorities</li>
+                                <li><a class="dropdown-item" href="principals-message.html">Principal's Message</a></li>
+                                <li><a class="dropdown-item" href="founders-message.html">Founder's Message</a></li>
+                                <li><a class="dropdown-item" href="trustees-message.html">Trustee's Message</a></li>
+                                <li><a class="dropdown-item" href="chairpersons-message.html">Chairperson's Message</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Institute Introduction</li>
+                                <li><a class="dropdown-item" href="history-vision-and-mission.html">History, Vision and
+                                        Mission</a></li>
+                                <li><a class="dropdown-item" href="path/to/school-management-committee.pdf"
+                                        target="_blank">School Management
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/sexual-harassment-committee.pdf"
+                                        target="_blank">Sexual Harassment
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/pta-executive-committee-members.pdf"
+                                        target="_blank">PTA Executive Committee
+                                        Members</a></li>
+                                <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+
+                                <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                                <li class="dropdown-header">Know Us More</li>
+                                <li><a class="dropdown-item" href="health-guidelines.html">Health Guidelines</a></li>
+                                <li><a class="dropdown-item" href="why-sarhad.html">Why Sarhad</a></li>
+                                <li><a class="dropdown-item" href="discover-sarhad.html">Discover Sarhad</a></li>
+                                <li><a class="dropdown-item" href="rules-and-regulations.html">Rules & Regulations</a>
+                                </li>
+                                <li><a class="dropdown-item" href="sister-institutes.html">Sister Institutes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Parent's Section</li>
+                                <li><a class="dropdown-item" href="instructions-to-parents.html">Instruction to
+                                        Parents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Facilities
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                                <li class="dropdown-header">Our Amenities</li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="computer-lab.html">Computer Lab</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Other Amenities</li>
+                                <li><a class="dropdown-item" href="school-bus.html">School Bus</a></li>
+                                <li><a class="dropdown-item" href="arts-and-music.html">Art & Music</a></li>
+                                <li><a class="dropdown-item" href="cocurricular-activities.html">Co-curricular
+                                        Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li class="dropdown-header">Seggregation of Classes</li>
+                                <li><a class="dropdown-item" href="preprimary-classes.html">Pre-primary Classes</a></li>
+                                <li><a class="dropdown-item" href="primary-classes.html">Primary Classes</a></li>
+                                <li><a class="dropdown-item" href="middle-classes.html">Middle Classes</a></li>
+                                <li><a class="dropdown-item" href="secondary-classes.html">Secondary Classes</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Planner</li>
+                                <li><a class="dropdown-item" href="calender.html">Calender</a></li>
+                                <li><a class="dropdown-item" href="academic-planner.html">Academic Planner</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="achievementsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Achievements
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                                <li class="dropdown-header">Awards</li>
+                                <li><a class="dropdown-item" href="bagged-awards.html">Bagged Awards</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Certificates</li>
+                                <li><a class="dropdown-item" href="deserving-certificates.html">Deserving
+                                        Certifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                <li class="dropdown-header">Mesmerizing Moments</li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery At Glance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mandatory-disclosure.html">Mandatory Public Disclosure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="text-wrapper">
+            "School is the stage of life."
+        </div>
+    </div>
+    <br>
+    <br>
+    <BR>
+    <!-- Paste your code here -->
+    <section class="showcase-area" id="showcase" style="height: 20vh; padding-bottom: 100px;">
+        <!-- Reduced bottom padding -->
+        <div class="showcase-container">
+            <h1 class="text-center">COMPUTER LAB</h1>
+            <p class="text-center">Of Our Sarhad CBSE School</p>
+        </div>
+    </section>
+    <div class="information">
+        
+    
+        <div class="container">
+            <div class="row">
+                <!-- Interactive Learning Environment -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Smart Boards">
+                        <div>
+                            <h4>Interactive Learning Environment</h4>
+                            <p>Our classroom is equipped with smart boards and interactive tools to enhance the learning
+                                experience for both students and teachers.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Advanced Audio-Visual Equipment -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Audio-Visual Equipment">
+                        <div>
+                            <h4>Advanced Audio-Visual Equipment</h4>
+                            <p>The classroom features high-quality projectors, sound systems, and visual aids to ensure
+                                every student has a clear view and sound of the lesson.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- High-Speed Internet Access -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="High-Speed Internet">
+                        <div>
+                            <h4>High-Speed Internet Access</h4>
+                            <p>Reliable high-speed internet enables seamless online lessons, research, and group
+                                projects during classroom activities.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Comfortable Seating and Workstations -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Seating">
+                        <div>
+                            <h4>Comfortable Seating and Workstations</h4>
+                            <p>The classroom is equipped with ergonomic seating and spacious desks, ensuring comfort and
+                                ease during long hours of study.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Technical Assistance -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Technical Assistance">
+                        <div>
+                            <h4>Technical Assistance</h4>
+                            <p>Technicians are available to help with any audio-visual or technology-related issues
+                                during lessons.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Quiet and Focused Atmosphere -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Quiet Atmosphere">
+                        <div>
+                            <h4>Quiet and Focused Atmosphere</h4>
+                            <p>The classroom is designed to minimize distractions, providing an ideal environment for
+                                focused learning.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Access and Rules -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Classroom Rules">
+                        <div>
+                            <h4>Access and Rules</h4>
+                            <p>Students are required to adhere to classroom rules, including maintaining cleanliness and
+                                respect for equipment. Devices are provided for learning purposes only.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Operating Hours -->
+                <div class="col-md-6">
+                    <div class="info-section">
+                        <img src="https://via.placeholder.com/120" alt="Operating Hours">
+                        <div>
+                            <h4>Operating Hours</h4>
+                            <p>Classroom hours are from Monday to Friday, 8:00 AM to 6:00 PM. Students are welcome to
+                                use the space for self-study during non-lecture hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

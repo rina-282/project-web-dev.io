@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact-us-page</title>
+    <link
+      rel="shortcut icon"
+      href="images/sarhad-logo.jpg"
+      type="image/x-icon"/>
+    <link rel="stylesheet" href="css/contact-us.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+
+    <!-- Include Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="contact-us.css"/>
+
+    <style>
+      /* Wrap header and navbar in a sticky container */
+      .sticky-header-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        /* Ensure it stays above the rest of the content */
+      }
+
+      /* Adjust the body margin to account for the fixed header/navbar */
+      body {
+        margin-top: 160px;
+        /* Adjust this to the height of the combined header + navbar */
+      }
+
+      .container-fluid {
+        background-image: url('images/below-navbar-pic.jpeg');
+        /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 35vh;
+        position: relative;
+        /* Make sure text is positioned relative to this container */
+      }
+
+      .text-wrapper {
+        font-size: 3rem;
+        /* Big font size for the text */
+        color: #ffffff;
+        /* White text to contrast with the image */
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        /* Center horizontally */
+        top: 50%;
+        /* Center vertically */
+        transform: translate(-50%, -50%);
+        /* Correctly center the text */
+        text-align: center;
+        /* Optional: ensure the text itself is centered */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Sticky Header + Navbar Container -->
+    <div class="mb-5 sticky-header-navbar">
+      <!-- Header -->
+      <header class="bg-light py-3">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <img
+              src="images/updated-logo.png"
+              alt="School Logo"
+              class="me-3"
+              style="height: 80px"/>
+            <div>
+              <h1 class="h4 mb-0">SARHAD CBSE SCHOOL</h1>
+              <p class="mb-0">PUNE | A CBSE AFFILIATED SCHOOL</p>
+              <small>AFFILIATION NO. XXXXX</small>
+            </div>
+          </div>
+          <div class="col-md-4 links mt-3 mt-md-0 text-center text-md-end">
+            <a
+              href="path/to/mandatory-public-disclosure.pdf"
+              class="btn btn-dark btn-sm d-none d-sm-inline-block mb-md-1"
+              target="_blank"
+              >Mandatory Public Disclosure</a
+            >
+            <a
+              href="path/to/schools-brochure.pdf"
+              class="btn btn-dark btn-sm d-none d-sm-inline-block"
+              target="_blank"
+              >School Brochure</a
+            >
+            <a
+              href="#login-signup"
+              class="btn btn-dark btn-sm d-none d-sm-inline-block"
+              >Login/Signup</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Sarhad CBSE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="about-us.html"
+                  id="aboutUsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                  <li class="dropdown-header">Our Authorities</li>
+                  <li>
+                    <a class="dropdown-item" href="principals-message.html">Principal's Message</a>
+                  <li>
+                    <a class="dropdown-item" href="founders-message.html"
+                      >Founder's Message</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="trustees-message.html"
+                      >Trustee's Message</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chairpersons-message.html"
+                      >Chairperson's Message</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="dropdown-header">Institute Introduction</li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="history-vision-and-mission.html"
+                      >History, Vision and Mission</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="path/to/school-management-committee.pdf"
+                      target="_blank"
+                      >School Management Committee</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="path/to/sexual-harassment-committee.pdf"
+                      target="_blank"
+                      >Sexual Harassment Committee</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="path/to/pta-executive-committee-members.pdf"
+                      target="_blank"
+                      >PTA Executive Committee Members</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+
+                  <li><a class="dropdown-item" href="#">Alumni</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="admission.html"
+                  id="admissionDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                  <li class="dropdown-header">Know Us More</li>
+                  <li>
+                    <a class="dropdown-item" href="health-guidelines.html"
+                      >Health Guidelines</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="why-sarhad.html"
+                      >Why Sarhad</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="discover-sarhad.html"
+                      >Discover Sarhad</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rules-and-regulations.html"
+                      >Rules & Regulations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sister-institutes.html"
+                      >Sister Institutes</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="dropdown-header">Parent's Section</li>
+                  <li>
+                    <a class="dropdown-item" href="instructions-to-parents.html"
+                      >Instruction to Parents</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="facilitiesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-header">Our Amenities</li>
+                  <li>
+                    <a class="dropdown-item" href="library.html">Library</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="computer-lab.html"
+                      >Computer Lab</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sports.html">Sports</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="dropdown-header">Other Amenities</li>
+                  <li>
+                    <a class="dropdown-item" href="school-bus.html"
+                      >School Bus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arts-and-music.html"
+                      >Art & Music</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cocurricular-activities.html"
+                      >Co-curricular Activities</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="academicsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Academics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                  <li class="dropdown-header">Seggregation of Classes</li>
+                  <li>
+                    <a class="dropdown-item" href="preprimary-classes.html"
+                      >Pre-primary Classes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="primary-classes.html"
+                      >Primary Classes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="middle-classes.html"
+                      >Middle Classes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="secondary-classes.html"
+                      >Secondary Classes</a
+                    >
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="dropdown-header">Planner</li>
+                  <li>
+                    <a class="dropdown-item" href="calender.html">Calender</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="academic-planner.html"
+                      >Academic Planner</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="achievementsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Achievements
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="achievementsDropdown"
+                >
+                  <li class="dropdown-header">Awards</li>
+                  <li>
+                    <a class="dropdown-item" href="bagged-awards.html"
+                      >Bagged Awards</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li class="dropdown-header">Certificates</li>
+                  <li>
+                    <a class="dropdown-item" href="deserving-certificates.html"
+                      >Deserving Certifications</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="galleryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gallery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                  <li class="dropdown-header">Mesmerizing Moments</li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html"
+                      >Gallery At Glance</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mandatory-disclosure.html"
+                  >Mandatory Public Disclosure</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mb-4 container-fluid">
+      <div class="text-wrapper">"School is the stage of life."</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section class="showcase-area" id="showcase" style="height: 20vh; padding-bottom: 100px;">
+      <!-- Reduced bottom padding -->
+      <div class="showcase-container">
+        <h1 class="text-center">GET IN TOUCH WITH US</h1>
+        <p class="text-center">And Drop Your Queries Here!</p>
+      </div>
+    </section>
+
+
+    <!-- --Contact Page-- -->
+     <div class="contact_us_body">
+    <div class="contact_us_container">
+      <div class="contact_us_left_box">
+        <h2>Our Contact Details: </h2>
+        <div class="contact_us_list">
+  
+          <div class="contact_us_info">
+            <div>
+              <img src="image_folder/CU_location.png" height="30px">  <h3> Address :</h3>
+            </div>
+          
+            <p> <a href="https://maps.app.goo.gl/qHNJdotZXYD43BUf8" target="_blank" style="text-decoration: none; color: black; font-size:15px ; font-style: normal;"  > Sarhad School , Katraj Bharati Vidyapeeth Road near <br> Katraj Dairy , Pune -411046 </a></p>
+  
+          </div>
+          <div class="contact_us_info">
+            <div>
+              <img src="image_folder/CU_telephone.png" height="30px">  <h3> Telephone:</h3>
+            </div>
+  
+            <p>  <a href="tel:+1234567890" style="text-decoration: none; color: black; font-size:15px ; font-style: normal;">1234567890</a> /
+             <a href="tel:+1234567890" style="text-decoration: none; color: black; font-size:15px ; font-style: normal;">0987654321</a></p>
+          
+  
+          </div>
+          <div class="contact_us_info">
+            <div>
+              <img src="image_folder/CU_email.png" height="30px">  <h3> Email Address :</h3>
+            </div>
+  
+            <p>   <a href="mailto:jaydeepganiga05@gmail.com" style="text-decoration: none; color: black; font-size:15px ; font-style: normal;">jaydeepganiga05@gmail.com</a>  </p> 
+  
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact_us_right_box">
+        <h2 style="color: tomato;">  Drop Us a Message :</h2>
+        <div class="contact_us_form_container">
+  
+          <form action="contact.php" method="post" enctype="multipart/form-data">
+  
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="textarea">Message</label>
+            <textarea name="text_area" id="text_area" required></textarea>
+  
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact_us_map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6339659063365!2d73.85141697519012!3d18.45492128262597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac6040cb269%3A0xac653591baaaa13e!2sSarhad%20College%20of%20Arts%2CCommerce%20and%20Science!5e0!3m2!1sen!2sin!4v1737548087999!5m2!1sen!2sin"
+        width="95%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

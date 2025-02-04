@@ -1,0 +1,15 @@
+CREATE DATABASE school_career;
+
+USE school_career;
+
+CREATE TABLE applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    mobile VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    gender ENUM('male', 'female', 'other') NOT NULL,
+    vacancy ENUM('teacher', 'Staff') NOT NULL,
+    subject VARCHAR(255),
+    resume VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

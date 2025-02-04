@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history-vision-and-mission</title>
+    <link rel="shortcut icon" href="images/updated-logo.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Wrap header and navbar in a sticky container */
+        .sticky-header-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            /* Ensure it stays above the rest of the content */
+        }
+
+        /* Adjust the body margin to account for the fixed header/navbar */
+        body {
+            margin-top: 160px;
+            /* Adjust this to the height of the combined header + navbar */
+        }
+
+        .container-fluid {
+            background-image: url('images/below-navbar-pic.jpeg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 35vh;
+            position: relative;
+            /* Make sure text is positioned relative to this container */
+        }
+
+        .text-wrapper {
+            font-size: 3rem;
+            /* Big font size for the text */
+            color: #ffffff;
+            /* White text to contrast with the image */
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            /* Center horizontally */
+            top: 50%;
+            /* Center vertically */
+            transform: translate(-50%, -50%);
+            /* Correctly center the text */
+            text-align: center;
+            /* Optional: ensure the text itself is centered */
+        }
+          /* Custom styles */
+        .section-title {
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    
+        .line {
+            height: 2px;
+            background-color: #f1c40f;
+            margin-bottom: 20px;
+        }
+    
+        .text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+    
+        .list-disc {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Header + Navbar Container -->
+    <div class="sticky-header-navbar">
+        <!-- Header -->
+        <header class="bg-light py-3">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/updated-logo.png" alt="School Logo" class="me-3" style="height: 80px;">
+                    <div>
+                        <h1 class="h4 mb-0">SARHAD CBSE SCHOOL</h1>
+                        <p class="mb-0">PUNE | A CBSE AFFILIATED SCHOOL</p>
+                        <small>AFFILIATION NO. XXXXX</small>
+                    </div>
+                </div>
+                <div class="mt-3 mt-md-0 text-center text-md-end">
+                    <a href="path/to/mandatory-public-disclosure.pdf"
+                        class="btn btn-dark btn-sm d-none d-sm-inline-block" target="_blank">Mandatory Public
+                        Disclosure</a>
+                    <a href="path/to/schools-brochure.pdf" class="btn btn-dark btn-sm me-2 d-none d-sm-inline-block"
+                        target="_blank">School Brochure</a>
+                    <a href="#login-signup" class="btn btn-dark btn-sm d-none d-sm-inline-block">Login/Signup</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Sarhad CBSE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-us.html" id="aboutUsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <li class="dropdown-header">Our Authorities</li>
+                                <li><a class="dropdown-item" href="principals-message.html">Principal's Message</a></li>
+                                <li><a class="dropdown-item" href="founders-message.html">Founder's Message</a></li>
+                                <li><a class="dropdown-item" href="trustees-message.html">Trustee's Message</a></li>
+                                <li><a class="dropdown-item" href="chairpersons-message.html">Chairperson's Message</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Institute Introduction</li>
+                                <li><a class="dropdown-item" href="history-vision-and-mission.html">History, Vision and
+                                        Mission</a></li>
+                                <li><a class="dropdown-item" href="path/to/school-management-committee.pdf"
+                                        target="_blank">School Management
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/sexual-harassment-committee.pdf"
+                                        target="_blank">Sexual Harassment
+                                        Committee</a></li>
+                                <li><a class="dropdown-item" href="path/to/pta-executive-committee-members.pdf"
+                                        target="_blank">PTA Executive Committee
+                                        Members</a></li>
+                                <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+
+                                <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                                <li class="dropdown-header">Know Us More</li>
+                                <li><a class="dropdown-item" href="health-guidelines.html">Health Guidelines</a></li>
+                                <li><a class="dropdown-item" href="why-sarhad.html">Why Sarhad</a></li>
+                                <li><a class="dropdown-item" href="discover-sarhad.html">Discover Sarhad</a></li>
+                                <li><a class="dropdown-item" href="rules-and-regulations.html">Rules & Regulations</a>
+                                </li>
+                                <li><a class="dropdown-item" href="sister-institutes.html">Sister Institutes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Parent's Section</li>
+                                <li><a class="dropdown-item" href="instructions-to-parents.html">Instruction to
+                                        Parents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Facilities
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                                <li class="dropdown-header">Our Amenities</li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="computer-lab.html">Computer Lab</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Other Amenities</li>
+                                <li><a class="dropdown-item" href="school-bus.html">School Bus</a></li>
+                                <li><a class="dropdown-item" href="arts-and-music.html">Art & Music</a></li>
+                                <li><a class="dropdown-item" href="cocurricular-activities.html">Co-curricular
+                                        Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li class="dropdown-header">Seggregation of Classes</li>
+                                <li><a class="dropdown-item" href="preprimary-classes.html">Pre-primary Classes</a></li>
+                                <li><a class="dropdown-item" href="primary-classes.html">Primary Classes</a></li>
+                                <li><a class="dropdown-item" href="middle-classes.html">Middle Classes</a></li>
+                                <li><a class="dropdown-item" href="secondary-classes.html">Secondary Classes</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Planner</li>
+                                <li><a class="dropdown-item" href="calender.html">Calender</a></li>
+                                <li><a class="dropdown-item" href="academic-planner.html">Academic Planner</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="achievementsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Achievements
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                                <li class="dropdown-header">Awards</li>
+                                <li><a class="dropdown-item" href="bagged-awards.html">Bagged Awards</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-header">Certificates</li>
+                                <li><a class="dropdown-item" href="deserving-certificates.html">Deserving
+                                        Certifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                <li class="dropdown-header">Mesmerizing Moments</li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery At Glance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mandatory-disclosure.html">Mandatory Public Disclosure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="text-wrapper">
+            "School is the stage of life."
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section class="showcase-area" id="showcase" style="height: 20vh; padding-bottom: 100px;">
+        <!-- Reduced bottom padding -->
+        <div class="showcase-container">
+            <h1 class="text-center">HISTORY, VISION & MISSION</h1>
+            <p class="text-center">Of Our Sarhad CBSE School</p>
+        </div>
+    </section>
+    <!-- Container for Vision and Mission sections -->
+    <div class="container py-5">
+    
+        <!-- Section: Vision -->
+        <div class="about-content mb-5">
+            <h5 class="section-title">VISION</h5>
+            <div class="line"></div>
+            <div class="text">
+                <p>Enabling all learners to recognize their worth, to foster creative thinking, and to play an active
+                    role in society, in its many facets. "We picture education not simply as an acquisition of
+                    knowledge, but rather as an experience, which teaches all people how to grow and think."</p>
+            </div>
+        </div>
+    
+        <!-- Section: Mission -->
+        <div class="about-content mb-5">
+            <h5 class="section-title">MISSION</h5>
+            <div class="line"></div>
+            <div class="text">
+                <p>"Our goal is to spread a love of learning by creating an atmosphere where everyone's voice is valued
+                    and inquiry is encouraged. Our goal is to develop creative thinkers who welcome challenges and
+                    pursue knowledge outside of the classroom. Our goal is to establish a thriving ecosystem that
+                    promotes innovation, diversity, and resilience through cooperative relationships with families and
+                    the community. We give students the tools they need to become critical thinkers and compassionate
+                    leaders who can successfully negotiate the challenges of the real world and contribute significantly
+                    to society."</p>
+    
+                <h6><strong>Core Values:</strong></h6>
+                <ul class="list-disc ps-4">
+                    <li><strong>Integrity:</strong> The single most important core value that enables choosing between
+                        right and wrong and standing for what is right at all times.</li>
+                    <li><strong>Dedication:</strong> Wholehearted commitment to the cause that one has identified
+                        oneself with.</li>
+                    <li><strong>Discipline:</strong> In thoughts and actions that lead to fearlessness.</li>
+                    <li><strong>Team Spirit:</strong> Enables working in perfect harmony with colleagues and teammates
+                        to achieve the desired synergy.</li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sarhad-cbse-school</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Include Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap"
+      rel="stylesheet">
+
+<body>
+
+  <style>
+    /* Wrap header and navbar in a sticky container */
+    .sticky-header-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        /* Ensure it stays above the rest of the content */
+    }
+
+    /* Adjust the body margin to account for the fixed header/navbar */
+    body {
+        margin-top: 160px;
+        /* Adjust this to the height of the combined header + navbar */
+    }
+
+</style>
+
+<!-- Sticky Header + Navbar Container -->
+<div class="sticky-header-navbar">
+    <!-- Header -->
+<header class="bg-light py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="images/Logo.png" alt="School Logo" class="me-3" style="height: 80px;">
+            <div>
+                <h1 class="h4 mb-0">SARHAD CBSE SCHOOL</h1>
+                <p class="mb-0">PUNE | A CBSE AFFILIATED SCHOOL</p>
+                <small>AFFILIATION NO. XXXXX</small>
+            </div>
+        </div>
+        <div class="mt-3 mt-md-0 text-center text-md-end">
+            <a href="path/to/mandatory-public-disclosure.pdf" class="btn btn-dark btn-sm d-none d-sm-inline-block"
+                target="_blank">Mandatory Public Disclosure</a>
+            <a href="path/to/schools-brochure.pdf" class="btn btn-dark btn-sm me-2 d-none d-sm-inline-block"
+                target="_blank">School Brochure</a>
+            <a href="#login-signup" class="btn btn-dark btn-sm d-none d-sm-inline-block">Login/Signup</a>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Sarhad CBSE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about-us.html" id="aboutUsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <li class="dropdown-header">Our Authorities</li>
+                        <li><a class="dropdown-item" href="principals-message.html">Principal's Message</a></li>
+                        <li><a class="dropdown-item" href="founders-message.html">Founder's Message</a></li>
+                        <li><a class="dropdown-item" href="trustees-message.html">Trustee's Message</a></li>
+                        <li><a class="dropdown-item" href="chairpersons-message.html">Chairperson's Message</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Institute Introduction</li>
+                        <li><a class="dropdown-item" href="history-vision-and-mission.html">History, Vision and Mission</a></li>
+                        <li><a class="dropdown-item" href="path/to/school-management-committee.pdf" target="_blank">School Management
+                                Committee</a></li>
+                        <li><a class="dropdown-item" href="path/to/sexual-harassment-committee.pdf" target="_blank">Sexual Harassment
+                                Committee</a></li>
+                        <li><a class="dropdown-item" href="path/to/pta-executive-committee-members.pdf" target="_blank">PTA Executive Committee
+                                Members</a></li>
+                        <li><a class="dropdown-item" href="prayers-and-pledge.html">Prayers & Pledge</a></li>
+
+                        <li><a class="dropdown-item" href="#">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="admission.html" id="admissionDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Admission
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                        <li class="dropdown-header">Know Us More</li>
+                        <li><a class="dropdown-item" href="health-guidelines.html">Health Guidelines</a></li>
+                        <li><a class="dropdown-item" href="why-sarhad.html">Why Sarhad</a></li>
+                        <li><a class="dropdown-item" href="discover-sarhad.html">Discover Sarhad</a></li>
+                        <li><a class="dropdown-item" href="rules-and-regulations.html">Rules & Regulations</a></li>
+                        <li><a class="dropdown-item" href="sister-institutes.html">Sister Institutes</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Parent's Section</li>
+                        <li><a class="dropdown-item" href="instructions-to-parents.html">Instruction to Parents</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Facilities
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                        <li class="dropdown-header">Our Amenities</li>
+                        <li><a class="dropdown-item" href="library.html">Library</a></li>
+                        <li><a class="dropdown-item" href="computer-lab.html">Computer Lab</a></li>
+                        <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Other Amenities</li>
+                        <li><a class="dropdown-item" href="school-bus.html">School Bus</a></li>
+                        <li><a class="dropdown-item" href="arts-and-music.html">Art & Music</a></li>
+                        <li><a class="dropdown-item" href="cocurricular-activities.html">Co-curricular Activities</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Academics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                        <li class="dropdown-header">Seggregation of Classes</li>
+                        <li><a class="dropdown-item" href="preprimary-classes.html">Pre-primary Classes</a></li>
+                        <li><a class="dropdown-item" href="primary-classes.html">Primary Classes</a></li>
+                        <li><a class="dropdown-item" href="middle-classes.html">Middle Classes</a></li>
+                        <li><a class="dropdown-item" href="secondary-classes.html">Secondary Classes</a></li>
+                        
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Planner</li>
+                        <li><a class="dropdown-item" href="calender.html">Calender</a></li>
+                        <li><a class="dropdown-item" href="academic-planner.html">Academic Planner</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="achievementsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Achievements
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                        <li class="dropdown-header">Awards</li>
+                        <li><a class="dropdown-item" href="bagged-awards.html">Bagged Awards</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-header">Certificates</li>
+                        <li><a class="dropdown-item" href="deserving-certificates.html">Deserving Certifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                        <li class="dropdown-header">Mesmerizing Moments</li>
+                        <li><a class="dropdown-item" href="gallery.html">Gallery At Glance</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mandatory-disclosure.html">Mandatory Public Disclosure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+  <style>
+    /* Default height for desktop (80vh) */
+    .main-carousel {
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .main-carousel-inner img {
+      height: 100%;
+      /* Ensures the image fills the container */
+      object-fit: cover;
+      /* Maintains aspect ratio while covering the area */
+    }
+
+    /* Tablet view (40vh) */
+    @media (max-width: 992px) {
+      .main-carousel {
+        height: 40vh;
+      }
+    }
+
+    /* Mobile view (30vh) */
+    @media (max-width: 768px) {
+      .main-carousel {
+        height: 30vh;
+      }
+    }
+  </style>
+  <div id="carouselExample" class="carousel main-carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner main-carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel4.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel5.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <style>
+    /* marquee section  */
+
+    .marquee-container {
+      display: flex;
+      align-items: center;
+      background-color: #FFDEB5;
+      /* Adjust background color as needed */
+      padding: 10px 20px;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-icon {
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+      border-right: 1px solid #fff;
+      flex-shrink: 0;
+      /* Prevents the icon section from shrinking */
+      color: #ffffff;
+    }
+
+    .marquee-icon img {
+      width: 30px;
+      /* Adjust the icon size */
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .marquee-icon .icon-text {
+      font-weight: bold;
+      color: #4B2E2E;
+
+    }
+
+    .marquee-content-wrapper {
+      overflow: hidden;
+      /* Hide the overflow content */
+      flex: 1;
+      /* Take the remaining space */
+      margin-left: 20px;
+      /* Space between the icon section and the marquee content */
+    }
+
+    .marquee-content {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+    }
+
+    .date-circle {
+      color: black;
+      background-color: #ffffff;
+      /* Adjust the background color of the date circle */
+      border-radius: 50%;
+      width: 50px;
+      /* Adjust size */
+      height: 50px;
+      /* Adjust size */
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      flex-shrink: 0;
+      /* Prevents the date circle from shrinking */
+    }
+
+    .date-circle span {
+      text-align: center;
+      /* font-size: 14px; */
+      color: #4B2E2E;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .news-text {
+      font-weight: bold;
+      color: #4B2E2E;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      /* Start off-screen to the right */
+      100% {
+        transform: translateX(-50%);
+      }
+
+      /* End off-screen to the left */
+    }
+  </style>
+  <!-- marquee section  -->
+
+  <div class="marquee-container">
+
+    <div class="marquee-icon">
+      <img src="images/newspaper.png" alt="News Icon"> <!-- Replace with your icon if needed -->
+      <div class="icon-text">LATEST NEWS</div>
+    </div>
+
+    <div class="marquee-content-wrapper">
+      <div class="marquee-content">
+        <div class="date-circle">
+          <span>06<br>Apr</span>
+        </div>
+        <div class="news-text">
+          WELCOME TO SARHAD CBSE SCHOOL
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- topper code 1 here start  -->
+  <style>
+    /* Center the cards and restrict width */
+    .container-1 {
+      width: 70%;
+      margin: auto;
+    }
+
+    /* Card styling */
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .topper-card {
+      background: linear-gradient(135deg, #f9f9f9, #e9ecef);
+      border-radius: 15px;
+    }
+
+    /* Image container for better alignment */
+    .card-img-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .card-img-top {
+      width: 120px;
+      height: auto;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    /* Card hover effect */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img-top:hover {
+      transform: scale(1.1);
+    }
+
+    /* Text styling */
+    .card-title {
+      color: #333;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container-1 {
+        width: 90%;
+        /* Full width on smaller screens */
+      }
+
+      .card-img-top {
+        width: 100px;
+        height: auto;
+      }
+    }
+  </style>
+
+
+  <div class="container-1 py-5">
+    <h1 class="my-4 text-center">10 <sup>th</sup> Topper </h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <!-- First Topper -->
+      <div class="col">
+        <div class="card topper-card h-100 text-center shadow-sm">
+          <div class="card-img-container">
+            <img src="images/profilepic.png" class="card-img-top rounded-circle" alt="Arya Kadam">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Arya Kadam - 96.04%</h5>
+            <p class="card-text text-muted">Outstanding in Mathematics and one of the bright students from the C
+              division of the 10th batch 2024-25.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Topper -->
+      <div class="col">
+        <div class="card topper-card h-100 text-center shadow-sm">
+          <div class="card-img-container">
+            <img src="images/profilepic.png" class="card-img-top rounded-circle" alt="Mansavi Sontakke">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Miss. Mansavi Sontakke - 97.00%</h5>
+            <p class="card-text text-muted">Excellent in Science and one of the bright students from the C division of
+              the 10th batch 2024-25.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Topper -->
+      <div class="col">
+        <div class="card topper-card h-100 text-center shadow-sm">
+          <div class="card-img-container">
+            <img src="images/profilepic.png" class="card-img-top rounded-circle" alt="Shreya Waswand">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Shreya Waswand - 96.00%</h5>
+            <p class="card-text text-muted">Top scorer in Physics and one of the bright students from the C division of
+              the 10th batch 2024-25.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievements Section -->
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-uppercase" style="color: #4B2E2E;">Achievements</h2>
+    </div>
+    <div class="row align-items-center">
+      <!-- Image Grid (Should be on top in small screens) -->
+      <div class="col-lg-6 order-first order-lg-2">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="images/d14.png" class="img-fluid rounded" alt="Achievement Image 1">
+          </div>
+          <div class="col-6">
+            <img src="images/d51.png" class="img-fluid rounded" alt="Achievement Image 2">
+          </div>
+          <div class="col-6">
+            <img src="images/d14.png" class="img-fluid rounded" alt="Achievement Image 3">
+          </div>
+          <div class="col-6">
+            <img src="images/d51.png" class="img-fluid rounded" alt="Achievement Image 4">
+          </div>
+        </div>
+      </div>
+      <!-- Text Content (Should be below in small screens) -->
+      <div class="col-lg-6 order-last order-lg-1">
+        <p class="fs-5">
+          At Sarhad CBSE, we celebrate our students' remarkable achievements that reflect their hard work and
+          dedication.
+          From academic excellence to outstanding performances in sports and arts, our students consistently demonstrate
+          their talent and commitment. Together, we foster an environment that nurtures growth, inspires creativity, and
+          shapes future leaders.
+        </p>
+        <div class="text-center mt-4">
+          <button class="btn btn-dark px-4 py-2 fw-bold">View More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- facilities section begin here  -->
+
+  <style>
+    .facility-card {
+      height: 200px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: linear-gradient(to bottom, #fff9e6, #ffe6cc);
+    }
+
+    .facility-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+
+  <div class="facilities-section py-5 text-center bg-light">
+    <h2 class="fw-bold text-dark mb-5">Facilities</h2>
+    <div class="container">
+      <div class="row g-4">
+        <!-- Facility 1 -->
+        <div class="col-md-3">
+          <div class="facility-card bg-white rounded-3 shadow-sm p-4 d-flex flex-column justify-content-center">
+            <div class="fs-2 text-primary mb-2">
+              <i class="bi bi-bus-front"></i>
+            </div>
+            <div class="fs-4 fw-bold">40+</div>
+            <div class="text-muted">Bus</div>
+          </div>
+        </div>
+        <!-- Facility 2 -->
+        <div class="col-md-3">
+          <div class="facility-card bg-white rounded-3 shadow-sm p-4 d-flex flex-column justify-content-center">
+            <div class="fs-2 text-success mb-2">
+              <i class="bi bi-easel"></i>
+            </div>
+            <div class="fs-4 fw-bold">100+</div>
+            <div class="text-muted">Classroom</div>
+          </div>
+        </div>
+        <!-- Facility 3 -->
+        <div class="col-md-3">
+          <div class="facility-card bg-white rounded-3 shadow-sm p-4 d-flex flex-column justify-content-center">
+            <div class="fs-2 text-danger mb-2">
+              <i class="bi bi-camera-video"></i>
+            </div>
+            <div class="fs-4 fw-bold">200+</div>
+            <div class="text-muted">CCTV</div>
+          </div>
+        </div>
+        <!-- Facility 4 -->
+        <div class="col-md-3">
+          <div class="facility-card bg-white rounded-3 shadow-sm p-4 d-flex flex-column justify-content-center">
+            <div class="fs-2 text-warning mb-2">
+              <i class="bi bi-display"></i>
+            </div>
+            <div class="fs-4 fw-bold">70+</div>
+            <div class="text-muted">Computer's</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <button class="btn btn-dark px-4 py-2 text-uppercase">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <img src="images/clg-building.jpeg" class="img-fluid rounded" alt="School Building">
+      </div>
+      <div class="col-md-7">
+        <h2 class="text-primary text-capitalize">about school</h2>
+        <p>
+          It was established in 2004 and is located at Katraj in Pune. It caters to all who expect quality education for
+          their wards with Indian value system.
+          Sarhad School sets itself apart through thoughtful learning environment and our unwavering commitment to
+          addressing your child’s needs at every step of their educational journey. With about 2 decades of experience,
+          Sarhad School has emerged as a trusted one for holistic development.
+          We at Sarhad School try to –
+          <br> • Provide a positive, caring, and engaging learning environment.
+          <br> • Provide children with the opportunity to establish real-world connections.
+          <br> • Provide the joy of experiencing exploration, discovery, and developing creativity during each step of
+          their educational journey.
+          <br> • Fosters independent learners
+        </p>
+        <a href="#" class="btn btn-outline-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+ 
+  <style>
+    .testimonial-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .testimonial-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .testimonial-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    @media (min-width: 768px) {
+        .testimonial-card {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+</style>
+
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">What Our Student Say</h2>
+  <div class="testimonial-container">
+      <div class="testimonial-wrapper" id="testimonialWrapper">
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"Great service! Highly recommend."</p>
+              <h5>- John Doe</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"Amazing quality and support!"</p>
+              <h5>- Jane Smith</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"They exceeded my expectations!"</p>
+              <h5>- Mike Johnson</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"Absolutely satisfied!"</p>
+              <h5>- Emily Brown</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"Best experience ever!"</p>
+              <h5>- Chris Wilson</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"I highly recommend them!"</p>
+              <h5>- Sarah Lee</h5>
+          </div>
+          <div class="testimonial-card text-center">
+              <img src="images/profilepic.png" width="100px" height="auto" class="rounded-circle mb-3" alt="User">
+              <p>"Simply outstanding!"</p>
+              <h5>- David Clark</h5>
+          </div>
+      </div>
+  </div>
+
+  <div class="text-center mt-3">
+      <button class="btn btn-primary me-2" onclick="scrollTestimonials(-1)">&#8592; Prev</button>
+      <button class="btn btn-primary" onclick="scrollTestimonials(1)">Next &#8594;</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  function scrollTestimonials(direction) {
+      const wrapper = document.getElementById("testimonialWrapper");
+      const totalCards = document.querySelectorAll(".testimonial-card").length;
+      const visibleCards = window.innerWidth >= 768 ? 3 : 1;
+
+      const maxIndex = totalCards - visibleCards;
+      currentIndex = Math.max(0, Math.min(currentIndex + direction, maxIndex));
+
+      const movePercentage = 100 / visibleCards;
+      wrapper.style.transform = `translateX(-${currentIndex * movePercentage}%)`;
+  }
+</script>
+
+<style>
+  .footer {
+      background-color: #f9e7d5;
+      color: #000;
+      padding: 30px 0;
+  }
+  .footer .footer-logo img {
+      max-width: 150px;
+  }
+  .footer .footer-links a {
+      color: #000;
+      text-decoration: none;
+  }
+  .footer .footer-links a:hover {
+      text-decoration: underline;
+  }
+  .footer .footer-bottom {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      font-size: 14px;
+  }
+  .footer .text-center-all {
+      text-align: center;
+  }
+  iframe {
+      width: 100%;
+      height: 200px; /* Increased the height */
+      border: 0;
+  }
+</style>
+
+
+<div class="footer">
+  <div class="container-fluid">
+      <div class="row text-center text-md-center align-items-center">
+          <!-- Logo Section -->
+          <div class="col-md-3 mb-4 text-center-all">
+              <div class="footer-logo">
+                  <img src="images/Logo.png" alt="Sarhad Logo">
+              </div>
+              <p class="mt-3">ज्ञानम् प्रतिष्ठार्णम् लोक, सीमा चेव<br> सरहद, पुणे</p>
+          </div>
+          <!-- Address Section -->
+          <div class="col-md-3 mb-4 text-center-all">
+              <h5>Sarhad School CBSE</h5>
+              <p>S.no.79, 80, 81, 76/4, Opp. Katraj Dairy Outlet 2, Pune-Kashmir Mitri Chowk,<br>Katraj, Pune, Maharashtra 411046</p>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-md-3 mb-4 footer-links text-center-all">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Admissions</a></li>
+                  <li><a href="#">Courses</a></li>
+              </ul>
+          </div>
+          <!-- Google Map Section -->
+          <div class="col-md-3 text-center-all">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.9062018578673!2d73.85244841533673!3d18.45721097519751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295151d7391c9%3A0x73314e627b51137f!2sSarhad%20School%20-%20Katraj!5e0!3m2!1sen!2sin!4v1643208573302!5m2!1sen!2sin" 
+                  loading="lazy">
+              </iframe>
+          </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+          Copyright © 2022 SARHAD SCHOOL CBSE | Powered by IT SARHAD
+      </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
